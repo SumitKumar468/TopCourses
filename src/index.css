@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.spinner {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: conic-gradient(#0000 10%, #22223b);
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
+    animation: spinner-zp9dbg 1s infinite linear;
+}
+
+@keyframes spinner-zp9dbg {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.spinner-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.nave-bar{
+    background-color: red;
+    height: 80px;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.filter-btn{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.btn{
+    background-color: darkcyan;
+    margin: 20px;
+    height: 50px;
+    width: 8rem;
+}
+
+.topCourse-desc{
+    background-color: rgb(192, 128, 92);
+}
+
+.cards-display{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-card{
+    width: 300px;
+    background-color: rgb(97, 97, 145);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image{
+    position: relative;
+}
+
+.heart-btn{
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    position: relative;
+    background-color: white;
+    left: 250px;
+    bottom: 17px;
+}
+
+.heart{
+    padding-top: 2px;
+    padding-left: 3px;
+    font-size: 1.75rem;
+}
+
+.title{
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    padding-left: 10px;
+}
+
+.crs-desc{
+    font-size: 1rem;
+    color: white;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
